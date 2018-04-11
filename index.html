@@ -13,6 +13,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--Title setting-->
         <title>:: DEV :: Coinweb Block Explorer</title>
+        <!--Code to fix resizable bug-->
+        <style type="text/css">
+        	@media only screen and (max-width:600px) {
+    #img-logo {
+    			max-width: 200px !important;
+    			width: auto !important;
+        
+    }
+}
+        </style>
     </head>
     <body>
         <!--Header section-->
@@ -69,7 +79,12 @@
             <nav class="black">
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo">
-                        <img src="img/coinweb-logo.svg">
+                        <img id="img-logo" src="img/coinweb-logo.svg" style="
+    margin-left: 5px;
+    max-width: 250px;
+    width: 95%;
+    margin-top: 1%;
+">
                     </a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
@@ -85,7 +100,7 @@
                         </li>
                         <!--Status-->
                         <li>
-                            <a href="#"><i class="material-icons left">trending_up</i>Stats</a>
+                            <a href="#"><i class="material-icons left">trending_up</i>Status</a>
                         </li>
                         <!--Wallets-->
                         <li>
@@ -136,7 +151,7 @@
                 </li>
                 <!--Status-->
                 <li>
-                    <a href="#" class="collapsible-header white-text"><i class="material-icons left white-text">trending_up</i>Stats</a>
+                    <a href="#" class="collapsible-header white-text"><i class="material-icons left white-text">trending_up</i>Status</a>
                 </li>
                 <!--Wallets-->
                 <li>
@@ -297,3 +312,4 @@
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
+
